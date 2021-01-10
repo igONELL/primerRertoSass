@@ -1,0 +1,41 @@
+
+/*--- Colours ---*/
+
+:root {
+--dark-cyan: #19a2ae;
+--very-dark-desaturated-blue: #2d3248;
+--dark-grayish-blue: #6a6f81;
+--dark-gray: #969696;
+}
+
+/*--- Reset Box sizing ---*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //medida igual a 10px
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/*--- Body ---*/
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+.card{
+    background-color: #fff;
+}
