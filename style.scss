@@ -23,6 +23,9 @@ html {
 body{
     font-family: 'Kumbh Sans', sans-serif;
     background-color: var(--dark-cyan);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
 
 h1{
@@ -38,4 +41,66 @@ h1{
 
 .card{
     background-color: #fff;
-}
+    width: 326px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    &-header{
+      width: 100%;
+      display: block;
+
+    }
+
+    &-body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: 1px solid #99999962;
+
+      &-img{
+        border: 5px solid #fff;
+        border-radius: 50%;
+        margin-top: calc(-48px - 5px);
+        background-color: #fff;
+      }
+
+      &-title{
+        margin-top: 2rem;
+        font-size: 1.8rem;
+
+        span{
+          color: var(--dark-gray);
+          font-weight: 400;
+          margin-left: 0.6rem;
+        }
+      }
+      &-text{
+        color: var(--dark-gray);
+        font-size: 1.6rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        
+      }
+    }
+
+    &-footer{
+      display: flex;
+      justify-content: space-around;
+
+      &-social{
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        h3{
+          font-size: 1.3rem;
+        }
+
+        p{
+          font-size: 1rem;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+  }
